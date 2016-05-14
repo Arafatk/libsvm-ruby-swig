@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tom Zeng"]
   s.date = %q{2010-03-27}
-  s.description = %q{Ruby wrapper of LIBSVM using SWIG}
+  s.description = %q{Ruby wrapper  of LIBSVM using SWIG}
   s.email = %q{tom.z.zeng@gmail.com}
   s.extensions = ["ext/extconf.rb"]
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "README.rdoc"]
@@ -22,11 +22,11 @@ Gem::Specification.new do |s|
     s.specification_version = 2
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<hoe>, [">= 1.8.3"])
+      s.add_development_dependency(%q<hoe>, ["3.15.0"])
     else
-      s.add_dependency(%q<hoe>, [">= 1.8.3"])
+      s.add_dependency(%q<hoe>, ["3.15.0"])
     end
   else
-    s.add_dependency(%q<hoe>, [">= 1.8.3"])
+    s.add_dependency(%q<hoe>, ["3.15.0"])
   end
 end
